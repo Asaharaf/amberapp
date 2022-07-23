@@ -1,0 +1,21 @@
+[
+  {
+  "title": "Amber Erp software",
+  "time": "0.34",
+  "thumbnail":"assets/thumbnail1.jpg",
+  "videoUrl":"https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4"
+  },
+  {
+    "title": "Amber Pos software",
+    "time": "5.44",
+    "thumbnail":"assets/thumbnail2.png",
+    "videoUrl":"https://st.bslmeiyu.com/wp-content/uploads/pliesquat.mp4"
+  },
+  {
+    "title": "Amber Pos software",
+    "time": "5.44",
+    "thumbnail":"assets/thumbnail2.png",
+    "videoUrl":"https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4"
+  }
+
+]
