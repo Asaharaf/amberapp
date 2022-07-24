@@ -2,6 +2,7 @@ import 'package:amber_erp/components/appbar_normal.dart';
 import 'package:amber_erp/models/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:get/get.dart';
 
 class Vouchers extends StatefulWidget {
   const Vouchers({Key? key}) : super(key: key);
@@ -314,12 +315,22 @@ class _VouchersState extends State<Vouchers> {
                           ],
                         ),
                       ),
-                      const Text(
-                        'Last Updated at :',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w200,
-                            color: Colors.black,
-                            fontStyle: FontStyle.italic),
+                      Row(
+                        children: [
+                          const Text(
+                            'Last Updated at :',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w200,
+                                color: Colors.black,
+                                fontStyle: FontStyle.italic),
+                          ),
+                          Text('0.00',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w200,
+                                color: Colors.black,
+                                fontStyle: FontStyle.italic),
+                          )
+                        ],
                       ),
                     ],
                   ),
@@ -391,18 +402,47 @@ class _ListviewControllState extends State<ListviewControll> {
                       style: const TextStyle(
                           fontWeight: FontWeight.w600, color: Colors.black),
                     ),
-                    subtitle: Row(
+                    subtitle: Column(
                       children: [
-                        const Text(
-                          'VoucherNo:',
-                          style: TextStyle(
-                              color: Colors.black, fontWeight: FontWeight.w300),
+                        Row(
+                          children: [
+                            const Text(
+                              'VoucherNo:',
+                              style: TextStyle(
+                                  color: Colors.black, fontWeight: FontWeight.w300),
+                            ),
+                            Text(
+                              element['voucherNo'],
+                              style: const TextStyle(
+                                  color: Colors.green, fontWeight: FontWeight.bold),
+                            ),
+                          ],
                         ),
-                        Text(
-                          element['voucherNo'],
-                          style: const TextStyle(
-                              color: Colors.green, fontWeight: FontWeight.bold),
+                        Row(
+                          children: [
+                            Text('Voucher type:',
+                              style: TextStyle(
+                                  color: Colors.black, fontWeight: FontWeight.w300),
+                            ),
+                            Text(element['voucherType'],
+                              style: const TextStyle(
+                                  color: Colors.green, fontWeight: FontWeight.bold),
+                            ),
+                          ],
                         ),
+                        Row(
+                          children: [
+                            Text('Date:',
+                              style: TextStyle(
+                                  color: Colors.black, fontWeight: FontWeight.w300),
+                            ),
+                            Text(element['voucherDate'],
+                              style: const TextStyle(
+                                  color: Colors.green, fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+
                       ],
                     ),
                     trailing: Wrap(

@@ -58,9 +58,9 @@ class _CategoryProfitState extends State<CategoryProfit> {
                             Column(mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(element['catName'].length > 20
+                                Text(element['catName'].length > 17
                                     ? element['catName']
-                                    .substring(0, 20) +
+                                    .substring(0, 15) +
                                     '..'
                                     : element['catName'],overflow: TextOverflow.ellipsis,style: const TextStyle(fontWeight: FontWeight.w600,color: Colors.blue),),
                                 Padding(

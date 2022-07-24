@@ -103,23 +103,23 @@ class _CashSummaryState extends State<CashSummary> {
                                   Colors.primaries[5],
                                   date: summryreportData.date,
                                   salesAmount:
-                                      summryreportData.salesAmount.toString(),
+                                      summryreportData.salesAmount.toStringAsFixed(2),
                                   // data[Random().nextInt(6)]['color'],salesAmount: summryreportData.salesAmount.toString(),
                                   salesreturn:
-                                      summryreportData.salesReturn.toString(),
+                                      summryreportData.salesReturn.toStringAsFixed(2),
                                   purchase: summryreportData.purchaseAmount
-                                      .toString(),
+                                      .toStringAsFixed(2),
                                   purchasereturn: summryreportData
                                       .purchaseReturn
-                                      .toString(),
+                                      .toStringAsFixed(2),
                                   receivables:
-                                      summryreportData.receivables.toString(),
+                                      summryreportData.receivables.toStringAsFixed(2),
                                   payables:
-                                      summryreportData.payables.toString(),
+                                      summryreportData.payables.toStringAsFixed(2),
                                   otherincome:
-                                      summryreportData.otherIncome.toString(),
+                                      summryreportData.otherIncome.toStringAsFixed(2),
                                   otherexpense:
-                                      summryreportData.otherExpense.toString(),
+                                      summryreportData.otherExpense.toStringAsFixed(2),
                                 ))
                             .toList(),
                       ),

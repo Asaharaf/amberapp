@@ -100,7 +100,7 @@ class _MonthlyDashBordState extends State<MonthlyDashBord> {
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
                             child: Text(
-                              element['salesReturn'],
+                              double.parse(element['salesReturn']).toStringAsFixed(2),
                               style: const TextStyle(
                                   color: Colors.red,
                                   fontSize: 23,

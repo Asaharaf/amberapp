@@ -349,17 +349,17 @@ class _MySideBarState extends State<MySideBar>
             TextSpan(
               children: [
                 TextSpan(
-                  text: 'Advanced',
+                  text: 'Innovation at its',
                 ),
                 TextSpan(
-                  text: ' urban',
+                  text: ' peack',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                TextSpan(
-                  text: ' lighting solution',
-                ),
+                // TextSpan(
+                //   text: ' lighting solution',
+                // ),
               ],
             ),
             style: TextStyle(fontSize: 100),
